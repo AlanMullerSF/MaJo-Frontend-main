@@ -1,11 +1,12 @@
 {
   "name": "mj-spw-client",
+  "homepage": "https://AlanMullerSF.github.io/MaJo-Frontend-main",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && NODE_ENV='production' vite build",
+    "build": "cross-env NODE_ENV=production vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prepare": "husky install",
@@ -47,6 +48,7 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "cross-env": "^7.0.3",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
