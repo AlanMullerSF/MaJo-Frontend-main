@@ -1,0 +1,33 @@
+@import "/src/sass/colors";
+
+.form-main-page {
+  margin: 7rem;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-welcome {
+  color: $magenta;
+  font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-main-page {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .form-welcome {
+    color: $magenta;
+    font-size: 1.5rem;
+  }
+
+  .diagnosis-checks {
+    margin-left: 4rem;
+  }
+}

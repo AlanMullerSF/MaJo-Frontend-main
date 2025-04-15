@@ -1,0 +1,63 @@
+.filter-item {
+  padding: 8px 16px;
+  .filter-header {
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    height: 24px;
+
+    p {
+      flex: 1;
+      margin: 0;
+    }
+  }
+
+  .chevron {
+    color: #79747e;
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 8px;
+  }
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.offcanvas {
+  padding: 16px;
+  max-width: 27%;
+}
+
+.filter-cta-container {
+  padding: 0 43px;
+}
+
+.btn-close {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+#modal-close {
+  right: 2rem !important;
+  top: 1rem !important;
+  position: relative;
+  z-index: 1;
+}
+
+.padding-title-modal {
+  padding: 0 40px !important;
+}

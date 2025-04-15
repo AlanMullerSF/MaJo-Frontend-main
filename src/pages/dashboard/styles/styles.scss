@@ -1,0 +1,70 @@
+.cards-container {
+    margin: 16px 0;
+}
+
+.filter-button-container {
+    padding: 24px 0;   
+}
+
+.table-backdrop {
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    color: white;
+}
+
+.graphs-container {
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.align-center {
+    margin: 0 auto;
+}
+.overflow-graph {
+    width: 90%; 
+    overflow: scroll;
+}
+
+@media only screen and (max-width: 989px) {
+    .graphs-container {
+        gap: 20px;
+        justify-content: space-between;
+        .recharts-wrapper {
+            transform: scale(0.6) translate(-40%, -30%);
+            height: 200px !important;
+        }
+
+        .align-center {
+            .recharts-wrapper {
+                transform: scale(0.6) translate(-35%, -30%);
+            }
+        }
+
+        .education-level {
+            .recharts-wrapper {
+                transform: scale(0.6) translate(-48%, -30%);
+            }
+        }
+
+        .reasons-for-joining {
+            max-width: fit-content;
+            overflow: scroll;
+            .recharts-wrapper {
+                transform: scale(0.6) translate(-40%, -30%);
+            }
+        }
+    }
+}

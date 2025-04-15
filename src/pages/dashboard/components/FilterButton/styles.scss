@@ -1,0 +1,23 @@
+@import '/src/sass/colors';
+
+.btn {
+    color: $magenta;
+    display: flex;
+    align-items: center;
+    background-color: $-bs-white;
+    border: 1px solid $magenta;
+    border-radius: 20px;
+    gap: 8px;
+    padding: 10px 24px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btn:hover, .btn:active {
+    color: $-bs-white;
+    border: none;
+
+    background-color: $magenta !important;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Juan Pablo",
+    "lastName": "Suárez Garcia",
+    "tutorName": "Jorge Suarez Salgado",
+    "dateOfBirth": "1-14-2018",
+    "sex": "M",
+    "state": "CDMX",
+    "city": "Benito Juarez",
+    "postalCode": "12345",
+    "age": 11,
+    "curp": "xxxx1234"
+  },
+  {
+    "name": "Jennifer",
+    "lastName": "Alcantara Ruiz",
+    "tutorName": "Malena Ruiz Ruiz",
+    "dateOfBirth": "12-02-2008",
+    "sex": "F",
+    "state": "Puebla",
+    "city": "Tabacalera",
+    "postalCode": "56789",
+    "age": 12,
+    "curp": "xxxx1235"
+  },
+  {
+    "name": "Jennifer",
+    "lastName": "Lopez Perez",
+    "tutorName": "Malena Ruiz Ruiz",
+    "dateOfBirth": "12-02-2008",
+    "sex": "F",
+    "state": "Puebla",
+    "city": "Tabacalera",
+    "postalCode": "56789",
+    "age": 12,
+    "curp": "xxxx1236"
+  },
+  {
+    "name": "Jennifer",
+    "lastName": "Martinez Ruiz",
+    "tutorName": "Malena Ruiz Ruiz",
+    "dateOfBirth": "12-02-2008",
+    "sex": "F",
+    "state": "Puebla",
+    "city": "Tabacalera",
+    "postalCode": "56789",
+    "age": 12,
+    "curp": "xxxx1237"
+  },
+  {
+    "name": "Jennifer",
+    "lastName": "Perez Ruiz",
+    "tutorName": "Malena Ruiz Ruiz",
+    "dateOfBirth": "12-02-2008",
+    "sex": "F",
+    "state": "Puebla",
+    "city": "Tabacalera",
+    "postalCode": "56789",
+    "age": 12,
+    "curp": "xxxx1238"
+  }
+]

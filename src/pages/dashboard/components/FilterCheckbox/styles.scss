@@ -1,0 +1,29 @@
+@import '/src/sass/colors';
+
+.single-filter {
+    display: flex;
+    flex: 1;
+    color: #79747E;
+    margin: 0;
+    align-items: center;
+
+
+    p {
+        flex: 1;
+        font-size: 16px;
+        margin: 0;
+        font-style: normal;
+        font-weight: 325;
+        line-height: normal;
+        letter-spacing: 0.64px;
+    }
+
+    .checkbox {
+        width: 24px;
+        height: 24px;
+    }
+
+    .checked {
+        color: $magenta;
+    }
+}

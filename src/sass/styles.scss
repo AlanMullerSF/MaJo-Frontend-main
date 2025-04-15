@@ -1,0 +1,15 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./colors";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,76 @@
+@import '/src/sass/colors';
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.checked {
+    color: $magenta;
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.row-cell {
+    max-height: 50px !important;
+    padding: 24px !important;
+}
+
+#body-row {
+    max-height: 50px !important;
+
+}
+
+.expanded-cell {
+    min-width: 380px;
+}
+
+#table-body {
+    max-height: 50%;
+    overflow: scroll;
+}
+
+.header-row {
+    background-color: #FFF8F0 !important;
+    text-overflow: ellipsis;
+    // max-width: 256px !important;
+    max-height: 50px !important;
+    white-space: nowrap;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.sort-icon-active {
+    color: $magenta;
+}
+
+.sort-icon:last-child {
+    margin-left: -8px;
+}
+
+
+.scrolling{
+    scrollbar-color: #FF9BD5 !important;
+    max-height: 50%;
+    overflow: scroll;
+}
+
+.header-text {
+    display: flex;
+    align-self: center;
+    margin: 0;
+    
+}
+
+@media only screen and (max-width: 989px) {
+    .row-cell {
+        padding: 2px 2px !important;
+    }
+}

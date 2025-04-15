@@ -1,0 +1,22 @@
+[
+  {
+    "email": "axel.garcia@encora.com",
+    "name": "Axel",
+    "lastName": "García",
+    "dateOfBirth": 947462400000,
+    "phone": "9999999999",
+    "password": "password",
+    "position": "Testing",
+    "admin": true
+  },
+  {
+    "email": "eliu.mendoza@encora.com",
+    "name": "Eliú",
+    "lastName": "Mendoza",
+    "dateOfBirth": 947462400000,
+    "phone": "9999999999",
+    "password": "password",
+    "position": "Testing",
+    "admin": true
+  }
+]

@@ -1,0 +1,50 @@
+.title-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  h1 {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+
+  .navigation-container {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.display-mode {
+  display: flex;
+}
+
+.admin-cta {
+  display: flex;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 989px) {
+
+  .title-navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    .navigation-container {
+      flex-direction: column;
+    }
+  }
+
+  .admin-cta {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

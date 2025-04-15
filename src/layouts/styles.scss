@@ -1,0 +1,42 @@
+.cards-container {
+    margin: 16px 0;
+}
+
+.filter-button-container {
+    padding: 24px 0;   
+}
+
+.table-backdrop {
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    color: white;
+}
+
+.confirm-delete-buttons {
+    display: flex;
+    gap: 64px;
+}
+
+@media only screen and (max-width: 989px) {
+    .filter-button-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .offcanvas {
+        max-width: 100% !important;
+    }
+
+    .offcanvas.offcanvas-start {
+        width: 100vw;
+    }
+}

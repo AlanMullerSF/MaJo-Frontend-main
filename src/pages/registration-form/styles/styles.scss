@@ -1,0 +1,315 @@
+@import "/src/sass/colors";
+
+.form-body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(90deg, $magenta 0%, $orange 100%);
+  flex: 0 0 25%;
+  position: fixed;
+  width: 25%;
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(90deg, $magenta 0%, $orange 100%);
+  background-image: url("../../../assets/Imagen\ de\ portada.png");
+  flex: 0 0 25%;
+  position: fixed;
+  width: 25%;
+}
+
+.form-h2 {
+  width: 80%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 2%;
+  margin: 10%;
+  text-wrap: balance;
+}
+
+.form-h3 {
+  width: 80%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 2%;
+  margin: 10%;
+  text-wrap: balance;
+}
+
+.mj-logo-container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+}
+
+.mj-logo-container-sb {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  position: fixed;
+  width: 25%;
+  top: 0;
+  left: 0;
+}
+
+.mj-logo {
+  scale: 70%;
+}
+
+.mj-logo-sb {
+  scale: 70%;
+}
+
+.form-main-container {
+  flex: 1;
+  width: 75%;
+  left: 25%;
+  position: absolute;
+  top: -2.6rem;
+}
+
+.form-subcontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.steps-container {
+  flex: 1;
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+  align-self: center;
+}
+
+.form-button {
+  justify-content: center;
+}
+
+.form-button:disabled {
+  background-color: $blue-gray;
+  border-color: $blue-gray;
+}
+
+.disclaimer-container {
+  margin-left: 2rem;
+  width: 70%;
+}
+
+.disclaimer {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.form-step {
+  margin-top: 3rem;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-pair {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.form-input {
+  margin-top: 1rem;
+  min-width: 25vw;
+}
+
+.input-label {
+  position: relative;
+  top: 1.3rem;
+  left: 1rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 16px;
+}
+
+.required-input {
+  color: $-bs-red;
+}
+
+.input-control {
+  font-size: 16px;
+  height: 3.5rem;
+}
+
+.input-check {
+  margin-top: 0.5rem;
+}
+
+.check-label {
+  position: relative;
+  left: -0.5rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 16px;
+  margin-top: 1rem;
+  max-width: 19rem;
+}
+
+.error-span {
+  font-size: 12px;
+  padding: 3px;
+  color: $-bs-red;
+  display: none;
+}
+
+.check-span {
+  font-size: 12px;
+  padding: 3px;
+  color: $-bs-red;
+  display: block;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #444;
+  border-radius: 50%;
+}
+
+.form-check-input:checked {
+  border: 9px solid #333;
+}
+.form-check-input[type="checkbox"]:checked {
+  background-color: $magenta;
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+input:invalid ~ .error-span {
+  display: block;
+}
+
+select:invalid ~ .error-span {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    min-height: 70px;
+    width: 100%;
+    position: inherit;
+  }
+
+  .banner {
+    background-image: url();
+    min-height: 70px;
+    position: inherit;
+    width: 100%;
+    background: linear-gradient(90deg, $magenta 0%, $orange 100%);
+  }
+
+  .form-h2 {
+    width: auto;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 5%;
+    text-wrap: wrap;
+    padding-top: 3%;
+  }
+
+  .form-h3 {
+    width: auto;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 5%;
+    text-wrap: wrap;
+  }
+
+  .mj-logo-container {
+    height: 30px;
+    width: 100vw;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .mj-logo-container-sb {
+    height: 0px;
+  }
+
+  .mj-logo {
+    top: 3.5rem;
+    scale: 40%;
+    position: relative;
+  }
+
+  .mj-logo-sb {
+    height: 0px;
+  }
+
+  .form-main-container {
+    width: 100%;
+    left: 0;
+    position: relative;
+    top: 1rem;
+  }
+
+  .buttons-container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .disclaimer-container {
+    margin-left: 1rem;
+    width: 85%;
+  }
+
+  .disclaimer {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-step {
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .input-pair {
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-left: 0;
+  }
+}

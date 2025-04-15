@@ -1,0 +1,12 @@
+[
+  { "title": "Sexo", "options": ["Femenino", "Masculino"] },
+  {
+    "title": "Tipo de Educacion",
+    "options": ["Educacion Regular", "Educacion Especial"]
+  },
+  {
+    "title": "Año de Diagnóstico",
+    "options": ["2023", "2022", "2021", "2020", "2019"]
+  },
+  { "title": "Estudia Actualmente", "options": ["si", "no"] }
+]

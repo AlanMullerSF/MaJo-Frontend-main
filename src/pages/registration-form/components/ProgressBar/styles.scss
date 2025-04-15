@@ -1,0 +1,50 @@
+@import "/src/sass/colors";
+
+.progress-bar {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 50px auto;
+  margin-right: 50px auto;
+  margin-bottom: 50px auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.progress-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $magenta; /* Circle border color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.full {
+  background-color: $magenta; /* Circle background color */
+}
+
+.progress-circle span {
+  margin-top: 4rem;
+  z-index: 2;
+  font-size: 0.8rem;
+  color: $magenta;
+}
+
+.progress-line {
+  height: 1px;
+  background-color: $magenta; /* Line color */
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .progress-bar {
+    height: 0;
+  }
+}

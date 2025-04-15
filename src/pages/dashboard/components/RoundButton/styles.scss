@@ -1,0 +1,66 @@
+@import "/src/sass/colors";
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-btn {
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: none;
+  padding: 10px 24px;
+}
+
+.expand-container {
+  flex: 1;
+}
+
+.filled {
+  color: $-bs-white;
+  background-color: $magenta;
+
+  &:active,
+  &:hover {
+    background-color: #ae196f;
+  }
+}
+
+.outlined {
+  color: $magenta;
+  border: 1px solid $magenta;
+  background-color: $-bs-white;
+
+  &:active,
+  &:hover {
+    border: 1px solid #ae196f;
+    color: #ae196f;
+  }
+}
+
+.flat {
+  color: $magenta;
+  background-color: $-bs-white;
+
+  &:active,
+  &:hover {
+    color: #ae196f;
+  }
+}
+
+.disabled {
+  color: white;
+  background-color: #999;
+  border-color: #999;
+  &:hover {
+    color: white;
+    background-color: #999;
+    border-color: #999;
+  }
+}

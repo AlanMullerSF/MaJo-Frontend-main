@@ -1,0 +1,25 @@
+version: 0.2
+
+#env:
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Node setted"
+  pre_build:
+    commands:
+      - node -v
+      - yum install git -y
+      - npm install
+  build:
+    commands:
+      - npm run build
+      - echo "Package completed"
+  post_build:
+    commands:
+      - echo "builded"
+artifacts:
+  files:
+    - "**/*"
+  base-directory: ./dist/

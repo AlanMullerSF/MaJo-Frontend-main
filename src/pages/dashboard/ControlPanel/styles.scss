@@ -1,0 +1,80 @@
+.control-panel {
+    padding: 0 32px;
+
+    .cards-container {
+        display: flex;
+        gap: 32px;
+        margin-top: 16px;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+
+    }
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 0%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: gray;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: transform 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  
+.input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: border-color 0.1s ease-out;
+}
+  
+.input:focus {
+  border-color: #6200ee;
+}
+  
+.input:focus + .label {
+  transform: translateY(0) scale(0.9);
+}
+  
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(0) scale(0.9);
+}
+  
+.input:not(:focus)::placeholder {
+  opacity: 1;
+}
+
+.large {
+  min-height: 200px;
+}
+
+.form-footer-cta { 
+    display: flex;
+    gap: 64px;
+}
+
+.custom-modal {
+  padding: 20px !important;
+}
+
+@media only screen and (max-width: 989px) {
+  .control-panel {
+    padding: 16px;
+  }
+}
