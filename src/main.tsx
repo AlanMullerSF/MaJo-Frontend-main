@@ -24,6 +24,7 @@ import AilmentsAndDiagnoses from "./pages/dashboard/AilmentsAndDiagnoses/index.t
 import ComplementaryInfo from "./pages/dashboard/ComplementaryInfo/index.tsx";
 import ParentsTutors from "./pages/dashboard/ParentsTutors/index.tsx";
 
+// Configura el enrutador con basename aquí
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -44,10 +45,14 @@ const router = createBrowserRouter(
         />
         <Route path="/padres-madres-o-tutores" element={<ParentsTutors />} />
       </Route>
-    </>,
+    </>  
   ),
+  {
+    basename: '/MaJo-Frontend-main',  // Aquí agregamos basename directamente
+  }
 );
 
+// Renderiza el enrutador con el Provider
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
@@ -57,5 +62,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </ThemeProvider>
       </PersistGate>
     </Provider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
